@@ -8,33 +8,34 @@
 
     <title>Doces Memórias - Incubadora</title>
 
-    <!-- CSS externo -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- CABEÇALHO COM FLEXBOX -->
-    <header class="cabecalho">
+    <!-- CABEÇALHO -->
+    <header class="cabecalho" id="inicio">
 
-        <!-- Nome à esquerda -->
         <h1>Doces Memórias</h1>
 
-        <!-- Menu à direita -->
         <nav>
             <ul class="menu">
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#produtos">Produtos</a></li>
                 <li><a href="#contato">Contato</a></li>
+                <li>
+                    <a href="pre-incubacao.html">Inscrição</a>
+                </li>
             </ul>
         </nav>
 
     </header>
 
+    <!-- CONTEÚDO PRINCIPAL -->
     <main id="conteudo">
 
         <!-- SEÇÃO INICIAL -->
-        <section id="inicio" class="inicio">
+        <section id="apresentacao" class="inicio">
 
             <h2>Início</h2>
 
@@ -53,73 +54,70 @@
 
         </section>
 
-        <!-- SEÇÃO DE PRODUTOS COM FLEXBOX -->
+        <!-- GALERIA DE PRODUTOS -->
         <section id="produtos" class="produtos">
 
             <h2>Produtos</h2>
 
             <div class="galeria">
 
-                
-<!-- CARD 1 -->
-<article class="card">
+                <!-- CARD 1 -->
+                <article class="card">
 
-    <div class="imagem-card">
+                    <div class="imagem-card">
 
-        <!-- Imagem do produto -->
-        <img src="casadinhos.jpg" alt="Casadinhos">
+                        <img src="casadinhos.jpg"
+                             alt="Casadinhos">
 
-        <!-- Etiqueta de destaque -->
-        <span class="badge">Produção</span>
+                        <span class="badge">Produção</span>
 
-    </div>
+                    </div>
 
-    <h3>Casadinhos</h3>
+                    <h3>Casadinhos</h3>
 
-    <p>
-        Massa amanteigada que derrete na boca,
-        feita com ingredientes selecionados.
-    </p>
-
-</article>
-
+                    <p>
+                        Massa amanteigada que derrete na boca,
+                        feita com ingredientes selecionados.
                     </p>
 
                 </article>
 
                 <!-- CARD 2 -->
-<article class="card">
+                <article class="card">
 
-    <div class="imagem-card">
-        <!-- Imagem do produto -->
-        <img src="Caseirinho01.jpg"
-             alt="Bolo caseirinho de chocolate">
+                    <div class="imagem-card">
 
-        <span class="badge">Entrega</span>
-    </div>
+                        <img src="Caseirinho01.jpg"
+                             alt="Bolo caseirinho de chocolate">
 
-    <h3>Caseirinhos</h3>
+                        <span class="badge">Entrega</span>
 
-    <p>
-        Bolos que encantam
-    </p>
+                    </div>
 
-</article>
+                    <h3>Caseirinhos</h3>
+
+                    <p>
+                        Bolos que encantam.
+                    </p>
+
+                </article>
+
                 <!-- CARD 3 -->
                 <article class="card">
 
                     <div class="imagem-card imagem3">
-                        <!-- Imagem do produto -->
-        <img src="bolodepote.jpg"
-             alt="Bolo de Pote Abacaxi">
+
+                        <img src="bolodepote.jpg"
+                             alt="Bolo de pote de abacaxi">
+
                         <span class="badge">Novidade</span>
+
                     </div>
 
                     <h3>Bolo de pote</h3>
 
                     <p>
-                        Explosão de sabor a cada colherada
-                        
+                        Explosão de sabor a cada colherada.
                     </p>
 
                 </article>
@@ -142,7 +140,7 @@
 
                 <br>
 
-                Endereço: São Torquato —, Vila Velha–ES
+                Endereço: São Torquato — Vila Velha–ES
 
             </address>
 
@@ -151,7 +149,7 @@
     </main>
 
     <!-- RODAPÉ -->
-    <footer>
+    <footer id="rodape">
 
         <p>
             &copy; <time datetime="2026">2026</time>
