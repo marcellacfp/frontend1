@@ -232,30 +232,237 @@ footer {
    RESPONSIVIDADE - CELULAR
 ================================= */
 
-@media (max-width: 768px) {
 
-    /* Cabeçalho em coluna */
+/* =========================================
+   CONFIGURAÇÃO GERAL
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    /* GRID: HEADER, MAIN E FOOTER */
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    font-family: Arial, sans-serif;
+}
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+    background-color: #8B4513;
+    color: white;
+}
+
+.cabecalho h1 {
+    margin: 0;
+}
+
+/* MENU */
+
+.menu {
+    display: flex;
+    gap: 20px;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #FFD700;
+}
+
+/* =========================================
+   CONTEÚDO PRINCIPAL
+========================================= */
+
+main {
+    padding: 30px;
+    display: grid;
+    gap: 30px;
+}
+
+section {
+    padding: 20px;
+}
+
+section h2 {
+    text-align: center;
+    color: #8B4513;
+}
+
+/* =========================================
+   SEÇÃO INICIAL
+========================================= */
+
+.inicio {
+    text-align: center;
+}
+
+.inicio figure {
+    margin: 20px auto;
+}
+
+.inicio img {
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* =========================================
+   GALERIA COM CSS GRID E AUTO-FIT
+========================================= */
+
+.galeria {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+}
+
+/* =========================================
+   CARDS DOS PRODUTOS
+========================================= */
+
+.card {
+    background-color: #FFF8F0;
+
+    border-radius: 10px;
+    padding: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.imagem-card {
+    position: relative;
+}
+
+.imagem-card img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+/* ETIQUETAS */
+
+.badge {
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+
+    background-color: #D2691E;
+    color: white;
+
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.card h3 {
+    color: #8B4513;
+}
+
+/* =========================================
+   CONTATO
+========================================= */
+
+.contato {
+    text-align: center;
+}
+
+.contato address {
+    font-style: normal;
+    line-height: 1.8;
+}
+
+.contato a {
+    color: #8B4513;
+}
+
+/* =========================================
+   RODAPÉ
+========================================= */
+
+footer {
+    background-color: #8B4513;
+    color: white;
+
+    text-align: center;
+    padding: 20px;
+}
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 600px) {
+
     .cabecalho {
         flex-direction: column;
-        gap: 15px;
-        padding: 20px;
+        gap: 20px;
     }
 
-    /* Menu centralizado */
     .menu {
-        justify-content: center;
         flex-wrap: wrap;
-        gap: 15px;
+        justify-content: center;
     }
 
-    /* Três cards em coluna */
-    .galeria {
-        flex-direction: column;
-        align-items: center;
+    main {
+        padding: 15px;
     }
+
+    
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+}
+
 
     .card {
         width: 100%;
         max-width: 350px;
     }
-}
+
